@@ -17,7 +17,7 @@
 	main {
 		position: relative;
 		margin: 0 auto;
-		max-width: 50em;
+		max-width: 80%;
 		/* padding: var(--nav-h) var(--side-nav) 0 var(--side-nav); */
 		padding: var(--nav-h) 0 0 0;
 		overflow-x: hidden;
@@ -31,7 +31,6 @@
 
 <Icons/>
 
-{@debug page}
 <Nav {segment} {page} logo="sapper-logo-horizontal.svg">
 
 	{#each menu as item}

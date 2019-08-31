@@ -3,6 +3,7 @@
 
 	export let src;
 	export let alt;
+	export let opacity;
 
     let sy = 0;
     
@@ -84,7 +85,7 @@
 <canvas
 	bind:this={canvas}
     class="parallax canvas"
-    style="transform: translate(0, {sy * .2}px)"
+    style="transform: translate(0, {sy * .2}px); opacity: {opacity}"
 	width={32}
 	height={32}
     src={src}

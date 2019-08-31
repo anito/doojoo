@@ -23,7 +23,7 @@
 	outline="logo-mask.svg"
 	logotype="doojoo-logotype.svg"
 	type="canvas"
-	outlineOpacity=".5"
+	opacity=".7"
 />
 <Card title="Home" bgColor="#ffffffdd">
 	<div>
