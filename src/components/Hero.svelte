@@ -6,6 +6,7 @@
 	export let tagline;
 	export let logotype;
 	export let outline;
+	export let outlineOpacity;
 	export let type;
 </script>
 
@@ -58,9 +59,9 @@
 </style>
 
 {#if type == 'canvas'}
-	<ParallaxCanvas alt="{title} logo" src={outline}/>
+	<ParallaxCanvas alt="{title} logo" src={outline} {$$props}/>
 {:else if type == 'logo'}
-	<ParallaxLogo alt="{title} logo" src={outline}/>
+	<ParallaxLogo alt="{title} logo" src={outline} {$$props}/>
 {/if}
 
 <section class="hero">

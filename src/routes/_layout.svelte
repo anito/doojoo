@@ -6,6 +6,7 @@
 	export let segment;
 
 	const { page } = stores();
+	
 </script>
 
 <style>
@@ -30,6 +31,7 @@
 
 <Icons/>
 
+{@debug page}
 <Nav {segment} {page} logo="sapper-logo-horizontal.svg">
 
 	{#each menu as item}

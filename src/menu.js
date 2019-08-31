@@ -1,5 +1,4 @@
 const menu = [
-    ["home","Home"],
     ["store/categories","Categories"],
     ["store/products","Products"],
     ["blog","Blog"],
