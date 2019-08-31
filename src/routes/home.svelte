@@ -39,7 +39,7 @@
 	</a>
 
 	<a href="docs" slot="two">
-		<h2>Best of both worlds</h2>
+		<h2>Best of Web Technologies</h2>
 		<p>All the SEO and progressive enhancement of a server-rendered app, with the slick navigation of an SPA</p>
 
 		<span class="learn-more">learn more</span>
