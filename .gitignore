@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
 yarn-error.log
-/cypress/screenshots/
-!/__sapper__/
-/__sapper__/dev
-/__sapper__/build
+/cypress/screenshots
+/__sapper__/
+!/__sapper__/export
 .vscode
