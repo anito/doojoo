@@ -5,7 +5,7 @@
 </script>
 
 <script>
-	import { Hero, Card } from '../components.js';
+	import { Hero, Card } from '../components';
 	import { Blurb } from '@sveltejs/site-kit';
 	
 </script>
@@ -34,7 +34,7 @@
 <Blurb>
 	<a href="https://svelte.dev" slot="one">
 		<h2>Powered by DOOJOO</h2>
-		<p>DOOJOO is an webdesign agency — building slick websites</p>
+		<p>DOOJOO is a webdesign agency — building slick websites</p>
 
 		<span class="learn-more">learn more</span>
 	</a>
