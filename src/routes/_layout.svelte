@@ -1,12 +1,17 @@
 <script>
 	import { stores } from '@sapper/app';
-	import { Icons, Icon, Nav, NavItem } from '@sveltejs/site-kit';
+	import { writable } from 'svelte/store';
+	import { Icons, Icon, Nav, NavItem } from '../components-svelte';
+	// import { Icons, Icon, Nav, NavItem } from '@sveltejs/site-kit';
 	import menu from "../menu";
+	import opac from "../stores/opacity";
 
 	export let segment;
+	export let op = 90;
 
 	const { page } = stores();
-	
+	opac.set(op);
+
 </script>
 
 <style>
@@ -31,7 +36,7 @@
 
 <Icons/>
 
-<Nav {segment} {page} logo="sapper-logo-horizontal.svg">
+<Nav {segment} {page} {opac} logo="sapper-logo-horizontal.svg">
 
 	{#each menu as item}
 		<NavItem segment="{item[0]}" selected={segment === item[0]} >

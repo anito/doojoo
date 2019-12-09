@@ -1,6 +1,6 @@
 <script>
     export let title = "";
-    export let bgColor = "1";
+    export let bgColor = "#fff";
 
 </script>
 

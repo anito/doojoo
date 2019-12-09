@@ -4,10 +4,9 @@
 
 <script>
 	import  Card  from '../components/Card.svelte'
+	import  List  from '../components/List.svelte'
 </script>
 
-<Card title="About">
-	<div>
-		This is the 'about' page. There's not much here.
-	</div>
+<Card title="Testing Fetch API">
+	<List />
 </Card>

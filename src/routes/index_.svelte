@@ -7,12 +7,12 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Sapper • The next small thing in web development</title>
 </svelte:head>
 
 <Hero
 	title="Sapper"
-	tagline="The next small thing in web development"
+	tagline="Powered by Axel Nitzschnerrr"
 	outline="sapper-logo-outline.svg"
 	logotype="sapper-logotype.svg"
 />

@@ -1,7 +1,9 @@
 const menu = [
-    ["store/categories","Categories"],
-    ["store/products","Products"],
+    ["categories","Categories"],
+    ["products","Products"],
+    ["svelma","Svelma"],
     ["blog","Blog"],
-    ["about","About"]
+    ["about","About"],
+    ["test","Test"]
 ]
 export default menu

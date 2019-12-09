@@ -6,8 +6,11 @@
 
 <script>
 	import { Hero, Card } from '../components';
+	import { List } from '../components';
 	import { Blurb } from '@sveltejs/site-kit';
+	import opac from "../stores/opacity";
 	
+	export let segment;
 </script>
 
 <svelte:head>
@@ -17,6 +20,7 @@
 <style>
 	
 </style>
+
 <Hero
 	title="Sapper"
 	tagline="Powered by Axel Nitzschner"
@@ -25,9 +29,10 @@
 	type="canvas"
 	opacity=".7"
 />
+
 <Card title="Home" bgColor="#ffffffdd">
 	<div>
-		Hello World
+		<input type="number" bind:value="{$opac}" step="10" max="100" min="0">
 	</div>
 </Card>
 
