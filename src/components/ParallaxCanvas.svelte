@@ -1,8 +1,7 @@
 <script>
     import { onMount } from 'svelte';
 
-	export let src;
-	export let alt;
+	export let outline;
 	export let opacity;
 
     let sy = 0;
@@ -65,8 +64,8 @@
 		width: 100%;
 		height: 100%;
 		background-color: #666;
-		-webkit-mask: url(../logo-mask.svg) 50% 50% no-repeat;
-		mask: url(../logo-mask.svg) 50% 50% no-repeat;
+		-webkit-mask: 50% 50% no-repeat;
+		mask: 50% 50% no-repeat;
 	}
     
 	@media (min-width: 800px) {
@@ -85,8 +84,8 @@
 <canvas
 	bind:this={canvas}
     class="parallax canvas"
-    style="transform: translate(0, {sy * .2}px); opacity: {opacity}"
+    style="transform: translate(0, {sy * .2}px); opacity: {opacity}; -webkit-mask-image: url(../{outline}); mask-image: url(../{outline});"
 	width={32}
 	height={32}
-    src={src}
+    src={outline}
 ></canvas>

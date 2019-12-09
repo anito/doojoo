@@ -65,9 +65,9 @@
 </style>
 
 {#if type == 'canvas'}
-	<ParallaxCanvas alt="{title} logo" src={outline} opacity={opacity}/>
+	<ParallaxCanvas alt="{title} logo" {outline} {opacity}/>
 {:else if type == 'logo'}
-	<ParallaxLogo alt="{title} logo" src={outline} opacity={opacity} />
+	<ParallaxLogo alt="{title} logo" {outline} {opacity} />
 {/if}
 
 <section class="hero">

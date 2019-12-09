@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Sapper Home</title>
+	<title>Doojoo Home</title>
 </svelte:head>
 
 <style>
@@ -22,10 +22,10 @@
 </style>
 
 <Hero
-	title="Sapper"
+	title="Doojoo"
 	tagline="Powered by Axel Nitzschner"
-	outline="logo-mask.svg"
-	logotype="doojoo-logotype.svg"
+	outline="../images/logo-mask.svg"
+	logotype="../images/doojoo-logotype.svg"
 	type="canvas"
 	opacity=".7"
 />
