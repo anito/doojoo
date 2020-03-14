@@ -1,7 +1,7 @@
 <script>
-    import Card from "../../components/Card.svelte";
-    import CategorySelection from "../../components/CategorySelection.svelte";
-    import SupplierSelection from "../../components/SupplierSelection.svelte";
+    import Card from "../components/Card.svelte";
+    import CategorySelection from "../components/CategorySelection.svelte";
+    import SupplierSelection from "../components/SupplierSelection.svelte";
 
     import { onMount } from "svelte";
 

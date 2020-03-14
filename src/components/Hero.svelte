@@ -1,12 +1,19 @@
 <script>
 	import ParallaxCanvas from './ParallaxCanvas.svelte';
 	import ParallaxLogo from './ParallaxLogo.svelte';
+	import { onMount } from 'svelte';
 
 	export let title;
 	export let tagline;
 	export let logotype;
 	export let outline;
+	export let opacity;
 	export let type;
+
+	onMount(() => {
+		
+	})
+
 </script>
 
 <style>
@@ -58,9 +65,9 @@
 </style>
 
 {#if type == 'canvas'}
-	<ParallaxCanvas alt="{title} logo" src={outline}/>
+	<ParallaxCanvas alt="{title} logo" {outline} {opacity}/>
 {:else if type == 'logo'}
-	<ParallaxLogo alt="{title} logo" src={outline}/>
+	<ParallaxLogo alt="{title} logo" {outline} {opacity} />
 {/if}
 
 <section class="hero">

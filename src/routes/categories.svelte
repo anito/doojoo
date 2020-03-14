@@ -1,5 +1,5 @@
 <script>
-import Card from "../../components/Card.svelte";
+import Card from "../components/Card.svelte";
 import { onMount } from "svelte";
 // import http from '../../http.js';
 

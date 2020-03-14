@@ -3,6 +3,10 @@
   export let message = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla.';
 </script>
 
+<style>
+
+</style>
+
 <article class="message">
   <div class="message-header">
       <p>{messageHeader}</p>
@@ -12,8 +16,3 @@
     {message}
   </div>
 </article>
-
-
-<style>
-
-</style>

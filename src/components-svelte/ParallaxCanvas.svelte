@@ -1,8 +1,8 @@
 <script>
     import { onMount } from 'svelte';
 
-	export let outline;
-	export let opacity;
+	export let src;
+	export let alt;
 
     let sy = 0;
     
@@ -22,13 +22,13 @@
 
 			for (let p = 0; p < imageData.data.length; p += 4) {
 				const i = p / 4;
-				const x = i % canvas.width;
+				const x = i % canvas.width * 4;
 				const y = i / canvas.height >>> 0;
 
 				const t = window.performance.now();
 
-				const r = 64 + (128 * x / canvas.width) + (64 * Math.sin(t / 1000));
-				const g = 64 + (128 * y / canvas.height) + (64 * Math.cos(t / 1000));
+				const r = 128 + (64 * x / canvas.width) + (128 * Math.sin(t / 1000));
+				const g = 128 + (64 * y / canvas.height) + (128 * Math.cos(t / 1000));
 				const b = 128;
 
 				imageData.data[p + 0] = r;
@@ -48,27 +48,29 @@
 
 <svelte:window bind:scrollY={sy}/>
 
-<style>
+<style lang="scss">
 	.parallax {
 		position: absolute;
-		top: -4rem;
-		top: 11rem;
+		top: 4rem;
 		right: 0rem;
-		width: 50rem;
-		height: 50rem;
+		width: 60%;
+		height: 80%;
 		will-change: transform;
 		display: none;
 	}
 
-    canvas {
+	canvas{
 		width: 100%;
 		height: 100%;
 		background-color: #666;
-		-webkit-mask: 50% 50% no-repeat;
-		mask: 50% 50% no-repeat;
+		-webkit-mask-position: 100% 0%;
+		-webkit-mask-repeat: no-repeat;
+		mask-position: 100% 0%;
+		mask-repeat: no-repeat;
+		opacity: .4;
 	}
     
-	@media (min-width: 800px) {
+	@media (min-width: 640px) {
 		.parallax {
 			display: block;
 		}
@@ -84,8 +86,7 @@
 <canvas
 	bind:this={canvas}
     class="parallax canvas"
-    style="transform: translate(0, {sy * .2}px); opacity: {opacity}; -webkit-mask-image: url(../{outline}); mask-image: url(../{outline});"
+    style="transform: translate(0, {sy * .4}px); -webkit-mask-image: url(../{src}); mask-image: url(../{src})"
 	width={32}
 	height={32}
-    src={outline}
 ></canvas>
