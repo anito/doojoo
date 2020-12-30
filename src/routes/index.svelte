@@ -9,7 +9,7 @@
 	import { List } from '../components';
 	import { Blurb } from '@sveltejs/site-kit';
 	import opac from "../stores/opacity";
-	
+
 	export let segment;
 </script>
 
@@ -18,7 +18,7 @@
 </svelte:head>
 
 <style>
-	
+
 </style>
 
 <Hero

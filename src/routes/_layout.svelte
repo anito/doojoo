@@ -1,6 +1,5 @@
 <script>
 	import { stores } from '@sapper/app';
-	import { writable } from 'svelte/store';
 	import { Icons, Icon, Nav, NavItem } from '../components-svelte';
 	// import { Icons, Icon, Nav, NavItem } from '@sveltejs/site-kit';
 	import menu from "../menu";
@@ -31,7 +30,7 @@
 	:global(.card) {
 		--card-mw: 80%;
 	}
-	
+
 </style>
 
 <Icons/>

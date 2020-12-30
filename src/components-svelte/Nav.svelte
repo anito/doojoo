@@ -9,7 +9,7 @@
 	export let opac;
 
 	const current = writable(null);
-	
+
 	setContext('nav', current);
 
 	let open = false;
