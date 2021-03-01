@@ -21,7 +21,7 @@
     "highlight.js": "^9.15.6",
     "marked": "^0.7.0",
     "polka": "^0.5.2",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.23.0",
     "rollup-plugin-postcss": "^2.0.3",
     "sirv": "^0.4.2",
     "svelma": "^0.3.0"
